@@ -3,16 +3,21 @@
  */
 public class SimpleQueue implements Queue {
 
+    private String[] data;
+    private int numItems;
+    private static final int DEFAULT_CAPACITY = 50;
+
     /**
      * Constructs an empty stack.
      */
     public SimpleQueue() {
-        throw new UnsupportedOperationException("Method not implemented");
+        data = new String[DEFAULT_CAPACITY];
+        numItems = 0;
     } // OracleStack
 
     /** {@inheritDoc} */
     public int size() {
-        throw new UnsupportedOperationException("Method not implemented");
+        return numItems;
     }
 
     /** {@inheritDoc} */
