@@ -20,7 +20,7 @@ class Queue:
         Returns and removes the front-most item of the Queue, which is represented by the last item
         in the list.
 
-        The runtime is O(1), or constant time, because indexinf to the end of a list happens in constant time.
+        The runtime is O(1), or constant time, because indexing to the end of a list happens in constant time.
         """
         if self.items:
             return self.items.pop()
